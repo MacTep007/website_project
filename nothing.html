@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>??? | Projekt 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-gradient page-scroll">
+    <input type="checkbox" id="theme-checkbox">
+
+    <!-- Theme toggle -->
+    <div class="theme-switch-container">
+        <label class="theme-label" for="theme-checkbox">Dark Mode</label>
+        <label class="theme-switch" for="theme-checkbox">
+            <span class="theme-track">
+                <div class="theme-star theme-star-1"></div>
+                <div class="theme-star theme-star-2"></div>
+                <div class="theme-star theme-star-3"></div>
+            </span>
+        </label>
+    </div>
+    <!-- Floating particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Main card -->
+    <div class="nothing-card">
+        <span class="nothing-emoji click-zone" id="emoji">🤔</span>
+
+        <h1 class="nothing-title">Tu<br>Nic<br>Nie Ma</h1>
+
+        <p class="nothing-sub">
+            Szukasz czegoś?<br>
+            Nie ma tu nic do znalezienia.
+        </p>
+
+        <div class="gif-wrapper">
+            <iframe src="https://giphy.com/embed/Vuw9m5wXviFIQ" allowFullScreen></iframe>
+        </div>
+
+        <p class="secret-msg" id="secret">( poważnie, nic tu nie ma )</p>
+
+        <a href="index.html" class="back-btn">
+            🏠 Wróć do strony głównej
+        </a>
+
+        <div class="counter-badge" id="counter"></div>
+    </div>
+</body>
+</html>

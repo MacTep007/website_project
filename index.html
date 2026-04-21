@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Builder Pro | Projekt 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-checkbox">
+
+    <div class="theme-switch-container">
+        <label class="theme-label" for="theme-checkbox">Dark Mode</label>
+        <label class="theme-switch" for="theme-checkbox"> 
+            <span class="theme-track">
+                <div class="theme-star theme-star-1"></div>
+                <div class="theme-star theme-star-2"></div>
+                <div class="theme-star theme-star-3"></div>
+            </span>
+        </label>
+    </div>
+
+    <div class="nav_section_global">
+        <a href="howToBuild.html" class="floating-nav-link">
+            <span class="icon">🛠</span>
+            <span class="text">Jak Złożyć?</span>
+        </a>
+        <a href="aboutMe.html" class="floating-nav-link">
+            <span class="icon">🙍‍♂️</span>
+            <span class="text">O mnie</span>
+        </a>
+        <a href="nothing.html" class="floating-nav-link">
+            <span class="icon">?</span>
+            <span class="text">???</span>
+        </a>
+    </div>
+
+    <!-- Боковая навигация -->
+    <nav class="bubble-menu-vertical">
+        <a href="#hero"    class="bubble"><span class="bubble-num">0</span><span class="bubble-text">Start</span></a>
+        <a href="#sockets" class="bubble"><span class="bubble-num">1</span><span class="bubble-text">Gniazda</span></a>
+        <a href="#cpu"     class="bubble"><span class="bubble-num">2</span><span class="bubble-text">CPU</span></a>
+        <a href="#gpu"     class="bubble"><span class="bubble-num">3</span><span class="bubble-text">GPU</span></a>
+        <a href="#ram"     class="bubble"><span class="bubble-num">4</span><span class="bubble-text">RAM</span></a>
+        <a href="#storage" class="bubble"><span class="bubble-num">5</span><span class="bubble-text">Dyski</span></a>
+        <a href="#psu"     class="bubble"><span class="bubble-num">6</span><span class="bubble-text">Zasilacz</span></a>
+        <a href="#cooling" class="bubble"><span class="bubble-num">7</span><span class="bubble-text">Chłodzenie</span></a>
+        <a href="#case"    class="bubble"><span class="bubble-num">8</span><span class="bubble-text">Obudowa</span></a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="sticky-wrapper">
+            <div class="hero-stars"></div>
+            <div class="hero-moon"></div>
+            <h1 class="hero-title">ZBUDUJ<br>WŁASNY<br><span class="accent">KOMPUTER</span></h1>
+            <p class="hero-sub">↓ scroll</p>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+
+        <section id="sockets" class="content-section">
+            <h2 class="section-label">01. Wybierz Gniazdo</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img-box">LGA</div>
+                    <div class="card-header"><span class="brand">INTEL</span><h3 class="model">LGA 1700</h3></div>
+                    <div class="card-info">Standard dla 12–14 gen Intel Core. Piny w gnieździe — montaż wymaga ostrożności.</div>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">AM4</div>
+                    <div class="card-header"><span class="brand">AMD</span><h3 class="model">Socket AM4</h3></div>
+                    <div class="card-info">Najbardziej opłacalna platforma. Ryzen 1000–5800X3D. Tańsze płyty i pamięci DDR4.</div>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">AM5</div>
+                    <div class="card-header"><span class="brand">AMD NEXT-GEN</span><h3 class="model">Socket AM5</h3></div>
+                    <div class="card-info">Nowy standard AMD z DDR5 i PCIe 5.0. Droższa inwestycja, ale z długim wsparciem.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cpu" class="content-section" style="padding-top:0">
+            <h2 class="section-label">02. Procesory (CPU)</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Model</th><th>Socket</th><th>Rdzenie / Wątki</th><th>Takt max</th><th>TDP</th><th>Kategoria</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Ryzen 5 5600</strong></td><td>AM4</td><td>6 / 12</td><td>4.4 GHz</td><td>65 W</td><td><span class="badge badge-green">Budżetowy</span></td></tr>
+                        <tr><td><strong>Ryzen 7 5800X3D</strong></td><td>AM4</td><td>8 / 16</td><td>4.5 GHz</td><td>105 W</td><td><span class="badge badge-blue">Gaming King</span></td></tr>
+                        <tr><td><strong>Core i5-13600K</strong></td><td>LGA 1700</td><td>14 / 20</td><td>5.1 GHz</td><td>125 W</td><td><span class="badge badge-yellow">Średni</span></td></tr>
+                        <tr><td><strong>Core i9-13900K</strong></td><td>LGA 1700</td><td>24 / 32</td><td>5.8 GHz</td><td>253 W</td><td><span class="badge badge-red">Flagowiec</span></td></tr>
+                        <tr><td><strong>Ryzen 5 7600X</strong></td><td>AM5</td><td>6 / 12</td><td>5.3 GHz</td><td>105 W</td><td><span class="badge badge-green">Budżetowy</span></td></tr>
+                        <tr><td><strong>Ryzen 9 7950X</strong></td><td>AM5</td><td>16 / 32</td><td>5.7 GHz</td><td>170 W</td><td><span class="badge badge-red">Flagowiec</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tip-box">
+                <strong>💡 Wskazówka:</strong> Dla graczy najlepszy stosunek ceny do wydajności to <strong>Ryzen 7 5800X3D</strong>.
+            </div>
+        </section>
+
+        <section id="gpu" class="content-section" style="padding-top:0">
+            <h2 class="section-label">03. Karty Graficzne (GPU)</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Model</th><th>Producent</th><th>VRAM</th><th>Magistrala</th><th>TDP</th><th>Segment</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>RX 6600</strong></td><td>AMD</td><td>8 GB</td><td>128-bit</td><td>132 W</td><td><span class="badge badge-green">Budżetowy</span></td></tr>
+                        <tr><td><strong>RTX 4060</strong></td><td>NVIDIA</td><td>8 GB</td><td>128-bit</td><td>115 W</td><td><span class="badge badge-green">Budżetowy</span></td></tr>
+                        <tr><td><strong>RX 7700 XT</strong></td><td>AMD</td><td>12 GB</td><td>192-bit</td><td>245 W</td><td><span class="badge badge-yellow">Średni</span></td></tr>
+                        <tr><td><strong>RTX 4070 Super</strong></td><td>NVIDIA</td><td>12 GB</td><td>192-bit</td><td>220 W</td><td><span class="badge badge-yellow">Średni</span></td></tr>
+                        <tr><td><strong>RTX 5060</strong></td><td>NVIDIA</td><td>8 GB</td><td>128-bit</td><td>150 W</td><td><span class="badge badge-blue">Next-Gen</span></td></tr>
+                        <tr><td><strong>RTX 4090</strong></td><td>NVIDIA</td><td>24 GB</td><td>384-bit</td><td>450 W</td><td><span class="badge badge-red">Flagowiec</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="ram" class="content-section" style="padding-top:0">
+            <h2 class="section-label">04. Pamięć RAM</h2>
+            <div class="cards-container">
+                <div class="card"><div class="card-img-box">DDR4</div><div class="card-header"><span class="brand">STANDARD</span><h3 class="model">DDR4</h3></div><div class="card-info">3200–3600 MHz. Tańsze moduły.</div></div>
+                <div class="card"><div class="card-img-box">DDR5</div><div class="card-header"><span class="brand">NEXT-GEN</span><h3 class="model">DDR5</h3></div><div class="card-info">4800 do 8000+ MHz. Wyższy koszt.</div></div>
+                <div class="card"><div class="card-img-box">XMP</div><div class="card-header"><span class="brand">TECHNOLOGIA</span><h3 class="model">XMP / EXPO</h3></div><div class="card-info">Jeden klik w BIOS.</div></div>
+            </div>
+        </section>
+
+        <section id="storage" class="content-section">
+            <h2 class="section-label">05. Magazyn Danych</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img-box">NVMe</div>
+                    <div class="card-header"><span class="brand">M.2 PCIe 4.0</span><h3 class="model">SSD NVMe</h3></div>
+                    <div class="card-info">Najszybszy wybór. System ładuje się w sekundy. Montowany bezpośrednio w płytę.</div>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">SATA</div>
+                    <div class="card-header"><span class="brand">2.5 CALA</span><h3 class="model">SSD SATA</h3></div>
+                    <div class="card-info">Dobry na magazyn gier. Tańszy od NVMe, wolniejszy, ale wciąż cichy.</div>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">HDD</div>
+                    <div class="card-header"><span class="brand">TALERZOWY</span><h3 class="model">HDD 3.5"</h3></div>
+                    <div class="card-info">Tylko na ogromne dane i kopie zapasowe. Powolny i głośny, ale bardzo tani.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="psu" class="content-section" style="padding-top:0">
+            <h2 class="section-label">06. Zasilacz (PSU)</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Moc</th><th>Certyfikat</th><th>Modularność</th><th>Przeznaczenie</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>550W - 650W</strong></td><td>80+ Bronze</td><td>Stałe kable</td><td>Zestawy budżetowe</td></tr>
+                        <tr><td><strong>750W - 850W</strong></td><td>80+ Gold</td><td>Pełny moduł</td><td>Gaming (RTX 4070/4080)</td></tr>
+                        <tr><td><strong>1000W+</strong></td><td>80+ Platinum</td><td>Pełny moduł</td><td>Workstation / RTX 4090</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tip-box">
+                <strong>💡 Wskazówka:</strong> Nigdy nie oszczędzaj na marce. Zasilacz to serce PC — tani "no-name" może spalić resztę części.
+            </div>
+        </section>
+
+        <section id="cooling" class="content-section" style="padding-top:0">
+            <h2 class="section-label">07. Chłodzenie i Akcesoria</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img-box">AIR</div>
+                    <div class="card-header"><span class="brand">POWIETRZE</span><h3 class="model">Cooler Wieżowy</h3></div>
+                    <div class="card-info">Niezawodny, cichy i tani. Idealny dla procesorów serii Ryzen 5 / Core i5.</div>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">AIO</div>
+                    <div class="card-header"><span class="brand">WODNE</span><h3 class="model">Chłodzenie Cieczą</h3></div>
+                    <div class="card-info">Najlepsza wydajność i wygląd. Wymagane przy i9 lub Ryzen 9.</div>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">PASTA</div>
+                    <div class="card-header"><span class="brand">THERMAL</span><h3 class="model">Termopasta</h3></div>
+                    <div class="card-info">Klucz do niskich temperatur. Wypełnia mikroszczeliny między CPU a chłodzeniem.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="case" class="content-section" style="padding-top:0">
+            <h2 class="section-label">08. Obudowa i Rozszerzenia</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Element</th><th>Typ / Standard</th><th>Opis</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Obudowa</strong></td><td>ATX / Micro-ATX</td><td>Musi pomieścić Twoją płytę i kartę graficzną.</td></tr>
+                        <tr><td><strong>Karta Sieciowa</strong></td><td>Wi-Fi 6E / BT</td><td>Opcjonalnie, jeśli płyta nie ma wbudowanego Wi-Fi.</td></tr>
+                        <tr><td><strong>Karta Dźwiękowa</strong></td><td>PCIe / DAC</td><td>Dla audiofili i profesjonalnej obróbki dźwięku.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <span>Pomoc internetowa: <span class="footer-accent">Claude</span></span>
+        <span>Bug fixer:<span class="footer-accent">Andrii Lekhkun</span></span>
+    </footer>
+
+</body>
+</html>

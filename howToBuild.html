@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poradnik Składania PC | Projekt 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="checkbox" id="theme-checkbox">
+    <nav class="bubble-menu-vertical">
+        <a href="index.html" class="bubble"><span class="bubble-num">🏠</span><span class="bubble-text">Powrót</span></a>
+        <a href="#step1" class="bubble"><span class="bubble-num">1</span><span class="bubble-text">Zasilacz</span></a>
+        <a href="#step2" class="bubble"><span class="bubble-num">2</span><span class="bubble-text">Procesor</span></a>
+        <a href="#step3" class="bubble"><span class="bubble-num">3</span><span class="bubble-text">Dysk M.2</span></a>
+        <a href="#step4" class="bubble"><span class="bubble-num">4</span><span class="bubble-text">Pamięć RAM</span></a>
+        <a href="#step5" class="bubble"><span class="bubble-num">5</span><span class="bubble-text">Płyta Główna</span></a>
+        <a href="#step6" class="bubble"><span class="bubble-num">6</span><span class="bubble-text">Grafika</span></a>
+    </nav>
+        <!-- Переключатель темы -->
+<div class="theme-switch-container">
+    <label class="theme-label" for="theme-checkbox">Dark Mode</label>
+    <label class="theme-switch" for="theme-checkbox"> <span class="theme-track">
+            <div class="theme-star theme-star-1"></div>
+            <div class="theme-star theme-star-2"></div>
+            <div class="theme-star theme-star-3"></div>
+            </span>
+    </label>
+</div>
+
+    <main class="main-content">
+        <header class="hero-section">
+            <h1 class="hero-title">INSTRUKCJA<br><span class="hero-accent">SKŁADANIA PC</span></h1>
+        </header>
+
+        <section id="step1" class="content-section">
+            <h2 class="section-label">01. Instalacja Zasilacza (PSU)</h2>
+            <div class="card">
+                <div class="card-info">
+                    W większości nowoczesnych obudów zasilacz montuje się na dole, wentylatorem skierowanym w dół. Jeśli zasilacz jest modułowy, podłącz tylko niezbędne kable (płyta główna, CPU, GPU) przed włożeniem go do środka.
+                </div>
+                <img src="power.jpg" alt="Montaż zasilacza" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px; margin-top: 15px; display: block;">
+            </div>
+        </section>
+
+        <section id="step2" class="content-section">
+            <h2 class="section-label">02. Instalacja Procesora</h2>
+            <div class="card">
+                <div class="card-info">
+                    To najbardziej delikatny moment. Podnieś dźwignię gniazda. Dopasuj „złoty trójkąt” na rogu procesora do oznaczenia na płycie głównej. Delikatnie opuść procesor – nie używaj siły!
+                </div>
+                <img src="proc.png" alt="Instalacja procesora" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px; margin-top: 15px; display: block;">
+            </div>
+        </section>
+
+        <section id="step3" class="content-section">
+            <h2 class="section-label">03. Dysk SSD M.2</h2>
+            <div class="card">
+                <div class="card-info">
+                    Włóż dysk M.2 do gniazda pod kątem około 30 stopni, a następnie dociśnij go i przykręć małą śrubką lub zabezpiecz zatrzaskiem. Jeśli płyta ma radiator, załóż go z powrotem.
+                </div>
+            </div>
+        </section>
+
+        <section id="step4" class="content-section">
+            <h2 class="section-label">04. Pamięć Operacyjna (RAM)</h2>
+            <div class="card">
+                <div class="card-info">
+                    Otwórz zatrzaski gniazd RAM. Włóż kości (zazwyczaj do slotów 2 i 4 dla Dual Channel). Dociśnij, aż usłyszysz wyraźne kliknięcie z obu stron.
+                </div>
+            </div>
+        </section>
+
+        <section id="step5" class="content-section">
+            <h2 class="section-label">05. Płyta Główna w Obudowie</h2>
+            <div class="card">
+                <div class="card-info">
+                    Upewnij się, że dystanse w obudowie są na właściwych miejscach. Włóż maskownicę portów (jeśli nie jest zintegrowana) i ostrożnie przykręć płytę główną.
+                </div>
+            </div>
+        </section>
+
+        <section id="step6" class="content-section">
+            <h2 class="section-label">06. Karta Graficzna (GPU)</h2>
+            <div class="card">
+                <div class="card-info">
+                    Wyłam odpowiednie śledzie w obudowie. Włóż kartę do najwyższego slotu PCIe x16 i dociśnij do kliknięcia. Nie zapomnij o podłączeniu kabli zasilających PCIe!
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" style="text-align: center; padding-bottom: 100px;">
+            <div class="tip-box">
+                💡 <strong>Porada:</strong> Po złożeniu wszystkiego sprawdź dwa razy wszystkie połączenia kabli przed pierwszym włączeniem zasilania.
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>Pomoc internetowa: <span class="footer-accent">Claude</span></span>
+        <span>Bug fixer:<span class="footer-accent">Andrii Lekhkun</span></span>
+    </footer>
+
+</body>
+</html>

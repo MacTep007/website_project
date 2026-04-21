@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mnie | Projekt 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-gradient">
+    <input type="checkbox" id="theme-checkbox">
+
+    <!-- Theme toggle -->
+    <div class="theme-switch-container">
+        <label class="theme-label" for="theme-checkbox">Dark Mode</label>
+        <label class="theme-switch" for="theme-checkbox">
+            <span class="theme-track">
+                <div class="theme-star theme-star-1"></div>
+                <div class="theme-star theme-star-2"></div>
+                <div class="theme-star theme-star-3"></div>
+            </span>
+        </label>
+    </div>
+
+    <!-- Bubble nav -->
+    <nav class="bubble-menu-vertical">
+        <a href="index.html" class="bubble"><span class="bubble-num">🏠</span><span class="bubble-text">Powrót</span></a>
+        <a href="#info"   class="bubble"><span class="bubble-num">1</span><span class="bubble-text">Info</span></a>
+        <a href="#skills" class="bubble"><span class="bubble-num">2</span><span class="bubble-text">Umiejętności</span></a>
+        <a href="#plan"   class="bubble"><span class="bubble-num">3</span><span class="bubble-text">Plan</span></a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="about-hero">
+        <div class="about-avatar">🧑‍💻</div>
+        <h1 class="about-name">O<br>Mnie</h1>
+        <p class="about-tagline">Uczeń · Programista · Przyszły Freelancer</p>
+        <div class="about-badges">
+            <span class="about-badge">🎓 IT</span>
+            <span class="about-badge">🎮 Games</span>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <div class="about-content">
+
+        <section id="info">
+            <h2 class="about-section-title">01. Podstawowe Info</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="info-card-icon">🎓</span>
+                    <div class="info-card-label">Edukacja</div>
+                    <div class="info-card-value">Technik Informatyk<br>Klasa 1F</div>
+                </div>
+                <div class="info-card">
+                    <span class="info-card-icon">📚</span>
+                    <div class="info-card-label">Znane języki programowania</div>
+                    <div class="info-card-value">HTML(*) · CSS · C++ · Python · abap</div>
+                </div>
+                <div class="info-card">
+                    <span class="info-card-icon">🎯</span>
+                    <div class="info-card-label">Cele</div>
+                    <div class="info-card-value">Zbudować własny komputer do 2027 roku:)</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="about-section-title">02. Umiejętności</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span class="skill-name">C++</span>
+                        <span class="skill-pct">35%</span>
+                    </div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:35%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-pct">55%</span>
+                    </div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:55%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-pct">55%</span>
+                    </div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:55%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span class="skill-name">Blender</span>
+                        <span class="skill-pct">10%</span>
+                    </div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:10%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-pct">45%</span>
+                    </div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:45%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="plan">
+            <h2 class="about-section-title">03. Plan na 2 Lata</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">Teraz — 2025</div>
+                    <div class="timeline-text">Nauka podstaw: C++, HTML/CSS, JavaScript.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">Połowa 2026</div>
+                    <div class="timeline-text">Budowanie niezależności finansowej na projektach w html i SAP.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">Koniec 2026</div>
+                    <div class="timeline-text">Złożenie własnego PC (Ryzen 7 5700x + RTX 5060).</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <span>Pomoc internetowa: <span class="footer-accent">Claude</span></span>
+        <span>Bug fixer:<span class="footer-accent">Andrii Lekhkun</span></span>
+    </footer>
+
+</body>
+</html>
